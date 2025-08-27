@@ -4,7 +4,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import styles from '../styles/WhatsAppButton.module.css';
 
 const WhatsAppButton = () => {
-  const phoneNumber = '59177894875';
+  const phoneNumber = '59169717553';
   const message = '¡Hola! Podrías darme más información de...';
 
   const handleClick = () => {

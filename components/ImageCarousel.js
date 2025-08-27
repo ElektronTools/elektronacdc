@@ -10,14 +10,17 @@ const ImageCarousel = ({ slides }) => {
       infiniteLoop={true}
       showThumbs={false}
       showStatus={false}
+      showIndicators={true}
     >
       {slides.map((slide, index) => (
         <div key={index} className={styles.slideContainer}>
           <img src={slide.image} alt={`Slide ${index}`} className={styles.image} />
+          {/* Aquí el texto dinámico */}
+          <p className="legend">{slide.text}</p>
         </div>
       ))}
     </Carousel>
   );
 };
 
-export default ImageCarousel; 
+export default ImageCarousel;

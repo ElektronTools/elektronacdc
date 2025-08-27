@@ -13,7 +13,7 @@ export default function Footer() {
             <ul className="list-unstyled d-flex justify-content-center align-items-center mt-1">
               <li className="me-3">
                 <a 
-                  href="https://wa.me/59177894875" 
+                  href="https://wa.me/59169717553" 
                   className={`text-light ${styles.socialIcon}`}
                   target="_blank" 
                   rel="noopener noreferrer"
