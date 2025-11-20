@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar';
 import ImageCarousel from '../components/ImageCarousel';
 import Footer from '../components/Footer';
-import Neonsign from '../components/Neonsign';
+import Neonsign from '../components/Neonsign'; // Ruta correcta
 
 const Home = () => {
   return (

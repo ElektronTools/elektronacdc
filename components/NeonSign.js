@@ -1,4 +1,4 @@
-import styles from '../styles/NeonSign.module.css';
+import styles from '../styles/Neonsign.module.css';
 
 const NeonSign = () => {
   return (
