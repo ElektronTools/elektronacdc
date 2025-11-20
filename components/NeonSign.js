@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../styles/NeonSign.module.css';
 
 const NeonSign = () => {
@@ -9,4 +8,4 @@ const NeonSign = () => {
   );
 };
 
-export default NeonSign; 
+export default NeonSign;
