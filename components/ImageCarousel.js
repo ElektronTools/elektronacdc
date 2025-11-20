@@ -1,5 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Image from 'next/image';
 import styles from '../styles/ImageCarousel.module.css';
 
 const ImageCarousel = ({ slides }) => {
@@ -14,9 +15,15 @@ const ImageCarousel = ({ slides }) => {
     >
       {slides.map((slide, index) => (
         <div key={index} className={styles.slideContainer}>
-          <img src={slide.image} alt={`Slide ${index}`} className={styles.image} />
-          {/* Aquí el texto dinámico */}
-          <p className="legend">{slide.text}</p>
+          <Image 
+            src={slide.image} 
+            alt={`Slide ${index}`} 
+            layout="responsive" 
+            width={1000} 
+            height={600} 
+            priority={index === 0} 
+            className={styles.image}
+          />
         </div>
       ))}
     </Carousel>

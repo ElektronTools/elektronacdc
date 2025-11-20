@@ -3,11 +3,11 @@ import Image from 'next/image';
 export default function About() {
   return (
     <div className="container mt-4">
-      <h1>Acerca de Elektron Lab</h1>
+      <h1>Acerca de ELEKTRON AC⚡DC</h1>
       <div className="row mt-4">
         <div className="col-md-6">
           <p>
-            Elektron Lab es una plataforma educativa dedicada a la enseñanza de electrónica y programación.
+            ELEKTRON AC⚡DC es una plataforma educativa dedicada a la enseñanza de electrónica y programación.
             Nuestro objetivo es proporcionar recursos de alta calidad para estudiantes, aficionados y profesionales.
           </p>
           <p>

@@ -1,0 +1,24 @@
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: #333 !important; /* Para la animación */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #17a2b8 !important;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand span {
+    font-size: 0.8rem;
+  }
+}

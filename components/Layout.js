@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-export default function Layout({ children, title = 'Tech Electric', description = 'Soluciones Eléctricas y Tecnologías' }) {
+export default function Layout({ children, title = 'ELEKTRON AC⚡DC', description = 'Soluciones Eléctricas y Tecnologías' }) {
   const router = useRouter();
   const showFooter = router.pathname === '/quienes-somos';
 

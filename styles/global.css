@@ -1,33 +1,140 @@
-/* styles/global.css */
-
-/* Estilos globales */
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* Estilo para el bloque de "¿Por qué elegirnos?" */
+.bg-light {
+  background-color: #f8f9fa !important; /* Fondo suave gris claro */
 }
 
-/* Estilos para el footer */
+.text-primary {
+  color: #2B6CB0; /* Color azul para el título */
+}
+
+.shadow-lg {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra más grande */
+}
+
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+ul {
+  text-align: center; /* Centra los elementos de la lista */
+  font-size: 1.2rem;
+  list-style: none; /* Remover los puntos de lista */
+}
+
+ul li {
+  margin-bottom: 10px; /* Espaciado entre los ítems */
+}
+
+h3.display-5 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2B6CB0;
+}
+
 footer {
-  margin-top: auto;
-  background-color: #343a40;
-  color: white;
+  background-color: #343a40; /* Fondo gris oscuro */
+  color: #F7FAFC; /* Texto blanco */
   padding: 20px 0;
 }
 
+footer .list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+footer .list-inline-item {
+  margin: 0 15px;
+}
+
+footer .text-light {
+  color: #F7FAFC; /* Color de los íconos */
+}
+
+footer .text-light:hover {
+  color: #2B6CB0; /* Cambio de color al pasar el ratón */
+}
+
+footer .text-white-50 {
+  color: rgba(255, 255, 255, 0.5); /* Texto de copyright más tenue */
+}
+
+footer .text-center {
+  text-align: center; /* Asegura que el texto esté centrado */
+}
+
 footer a {
-  color: white;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
-}
-
-footer a:hover {
-  opacity: 0.8;
   text-decoration: none;
 }
 
-/* Estilos para el contenido principal */
-main {
-  flex: 1 0 auto;
+
+/* Estilos para el Navbar */
+.navbar {
+  background-color: #343a40; /* Fondo oscuro para el navbar */
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease;
 }
-  
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar-brand .h5 {
+  margin: 0;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 1.5rem; /* Espaciado entre los ítems */
+}
+
+.nav-link {
+  color: #ffffff; /* Color de los enlaces */
+  font-size: 1rem;
+  text-transform: uppercase; /* Transformar texto a mayúsculas */
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #17a2b8; /* Color de hover para los enlaces */
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; /* Color del icono del menú */
+}
+
+/* Efecto de sombra cuando el navbar está activo */
+.navbar-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el fondo oscuro */
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+/* Responsividad para el Navbar en móviles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center; /* Centrar el contenido en móvil */
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    display: block; /* Los ítems se alinean verticalmente */
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}

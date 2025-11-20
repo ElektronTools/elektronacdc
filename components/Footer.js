@@ -1,87 +1,45 @@
-import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTiktok, faWhatsapp, faYoutube, faFacebook, faTelegram } from '@fortawesome/free-brands-svg-icons';
-import styles from '../styles/Footer.module.css';
+import { faWhatsapp, faTiktok, faFacebook, faTelegram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-white py-4 mt-auto">
-      <div className="container">
-        <div className="row">
-          {/* Sección de redes sociales */}
-          <div className="col-12 text-center">
-            <ul className="list-unstyled d-flex justify-content-center align-items-center mt-1">
-              <li className="me-3">
-                <a 
-                  href="https://wa.me/59169717553" 
-                  className={`text-light ${styles.socialIcon}`}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  title="WhatsApp"
-                >
-                  <FontAwesomeIcon icon={faWhatsapp} size="2x" />
-                </a>
-              </li>
-              <li className="me-3">
-                <a 
-                  href="https://www.tiktok.com/@elektrontools?is_from_webapp=1&sender_device=pc" 
-                  className={`text-light ${styles.socialIcon}`}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  title="TikTok"
-                >
-                  <FontAwesomeIcon icon={faTiktok} size="2x" />
-                </a>
-              </li>
-{/*               <li className="me-3">a
-                <a 
-                  href="https://www.youtube.com/@ElektronTools123" 
-                  className={`text-light ${styles.socialIcon}`}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  title="YouTube"
-                >
-                  <FontAwesomeIcon icon={faYoutube} size="2x" />
-                </a>
-              </li> */}
-              <li className="me-3">
-                <a 
-                  href="https://www.facebook.com/profile.php?id=61557499266597&mibextid=ZbWKwL" 
-                  className={`text-light ${styles.socialIcon}`}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  title="Facebook"
-                >
-                  <FontAwesomeIcon icon={faFacebook} size="2x" />
-                </a>
-              </li>
-              <li className="me-3">
-                <a 
-                  href="https://t.me/electrontools" 
-                  className={`text-light ${styles.socialIcon}`}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  title="Telegram"
-                >
-                  <FontAwesomeIcon icon={faTelegram} size="2x" />
-                </a>
-              </li>
-            </ul>
-          </div>
+    <footer className="bg-dark text-white py-4 mt-5">
+      <div className="container text-center">
+        {/* Redes Sociales */}
+        <div className="d-flex justify-content-center gap-4 mb-3">
+          <a href="https://wa.me/59169717553" className="text-light" aria-label="WhatsApp">
+            <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+          </a>
+          <a href="https://www.tiktok.com/@elektrontools" className="text-light" aria-label="TikTok">
+            <FontAwesomeIcon icon={faTiktok} size="2x" />
+          </a>
+          <a href="https://www.facebook.com/elektronlab" className="text-light" aria-label="Facebook">
+            <FontAwesomeIcon icon={faFacebook} size="2x" />
+          </a>
+          <a href="https://t.me/electrontools" className="text-light" aria-label="Telegram">
+            <FontAwesomeIcon icon={faTelegram} size="2x" />
+          </a>
+          <a href="https://www.youtube.com/@LAAT123" className="text-light" aria-label="YouTube">
+            <FontAwesomeIcon icon={faYoutube} size="2x" />
+          </a>
         </div>
-        
-        {/* Línea divisoria */}
-        <hr className="my-2 bg-secondary" />
-        
-        {/* Copyright */}
-        <div className="row">
-          <div className="col-12 text-center">
-            <p className="mb-0 text-white-50 small">
-              &copy; {new Date().getFullYear()} Elektron Lab. Todos los derechos reservados.
-            </p>
-          </div>
-        </div>
+
+        {/* Texto de copyright y créditos */}
+        <p className="text-center text-white-50 small m-0">
+          &copy; {new Date().getFullYear()} ELEKTRON AC⚡DC. Todos los derechos reservados.<br />
+          devLAAT💻
+        </p>
       </div>
+
+      <style jsx>{`
+        a {
+          transition: all 0.3s ease;
+        }
+        a:hover {
+          color: #ffc107 !important;
+          transform: scale(1.2);
+        }
+      `}</style>
     </footer>
   );
-} 
+}

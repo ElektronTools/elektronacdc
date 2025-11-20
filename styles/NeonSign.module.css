@@ -3,57 +3,59 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 8vh;
+  min-height: 15vh;
   margin: 0;
   padding: 1rem;
 }
 
 .neonText {
   font-family: 'Arial', sans-serif;
-  font-size: 1.5rem;
+  font-size: 4rem;
   text-align: center;
   margin: 0;
-  animation: colorChange 1s infinite alternate;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff;
+  animation: neonGlow 1.5s infinite alternate;
 }
 
-@keyframes colorChange {
+@keyframes neonGlow {
   0% {
     color: #0ff;
-    text-shadow:
-      0 0 5px #0ff,
-      0 0 10px #0ff,
-      0 0 20px #0ff,
-      0 0 40px #0ff,
+    text-shadow: 
+      0 0 5px #0ff, 
+      0 0 10px #0ff, 
+      0 0 20px #0ff, 
+      0 0 40px #0ff, 
       0 0 80px #0ff;
   }
   50% {
     color: #ff69b4;
-    text-shadow:
-      0 0 5px #ff69b4,
-      0 0 10px #ff69b4,
-      0 0 20px #ff69b4,
-      0 0 40px #ff69b4,
+    text-shadow: 
+      0 0 5px #ff69b4, 
+      0 0 10px #ff69b4, 
+      0 0 20px #ff69b4, 
+      0 0 40px #ff69b4, 
       0 0 80px #ff69b4;
   }
   100% {
     color: #0ff;
-    text-shadow:
-      0 0 5px #0ff,
-      0 0 10px #0ff,
-      0 0 20px #0ff,
-      0 0 40px #0ff,
+    text-shadow: 
+      0 0 5px #0ff, 
+      0 0 10px #0ff, 
+      0 0 20px #0ff, 
+      0 0 40px #0ff, 
       0 0 80px #0ff;
   }
 }
 
 @media (max-width: 768px) {
   .neonText {
-    font-size: 3rem;
+    font-size: 3rem; /* Ajuste de tamaño en pantallas pequeñas */
   }
 }
 
 @media (max-width: 480px) {
   .neonText {
-    font-size: 2rem;
+    font-size: 2rem; /* Ajuste aún más pequeño en pantallas más pequeñas */
   }
-} 
+}

@@ -1,4 +1,3 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import styles from '../styles/WhatsAppButton.module.css';
@@ -19,4 +18,4 @@ const WhatsAppButton = () => {
   );
 };
 
-export default WhatsAppButton; 
+export default WhatsAppButton;

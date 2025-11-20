@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/global.css';
+import '../styles/global.css'; // Si tienes estilos personalizados
 import WhatsAppButton from '../components/WhatsAppButton';
-
 import Layout from '../components/Layout';
 import { ErrorBoundary } from 'react-error-boundary';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function ErrorFallback({ error }) {
   return (
@@ -25,4 +26,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp; 
+export default MyApp;
