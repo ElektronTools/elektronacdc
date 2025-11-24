@@ -1,0 +1,119 @@
+.qs-container {
+  max-width: 1100px;
+  margin: 120px auto 40px auto;
+  padding: 0 16px;
+}
+
+.qs-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.qs-hero-text {
+  flex: 1 1 320px;
+}
+
+.qs-hero-photo {
+  flex: 0 0 260px;
+  text-align: center;
+}
+
+.qs-hero-photo img {
+  width: 240px;
+  height: 240px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 4px solid #f5f5f5;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.qs-roles {
+  font-weight: 600;
+  margin: 8px 0 12px;
+}
+
+.qs-intro {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.qs-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.qs-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.qs-btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.qs-btn-outline {
+  background: #fff;
+  color: #2563eb;
+  border-color: #2563eb;
+}
+
+.qs-section {
+  margin-bottom: 32px;
+}
+
+.qs-section h3 {
+  margin-bottom: 8px;
+}
+
+.qs-list {
+  padding-left: 18px;
+}
+
+.qs-list li {
+  margin-bottom: 6px;
+}
+
+.qs-note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+.qs-timeline {
+  border-left: 2px solid #e5e7eb;
+  padding-left: 16px;
+}
+
+.qs-timeline-item {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.qs-timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  background: #2563eb;
+  border-radius: 50%;
+}
+
+.qs-timeline-date {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.qs-section-cta {
+  text-align: center;
+}

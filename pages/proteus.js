@@ -1,59 +1,61 @@
-export default function Proteus() {
+import Layout from '../components/Layout';
+import Image from 'next/image';
+
+
+const ProteusPage = () => {
   return (
-    <div className="container mt-4">
-      <h1>Proteus - Simulador de Circuitos</h1>
-      <div className="row mt-4">
-        <div className="col-md-8">
-          <div className="card mb-4">
-            <div className="card-body">
-              <h5 className="card-title">¿Qué es Proteus?</h5>
-              <p className="card-text">
-                Proteus es un software de simulación de circuitos electrónicos que permite diseñar, 
-                probar y depurar circuitos antes de implementarlos en hardware real. Es una herramienta 
-                esencial para estudiantes, aficionados y profesionales de la electrónica.
-              </p>
-            </div>
-          </div>
-          
-          <div className="card mb-4">
-            <div className="card-body">
-              <h5 className="card-title">Características principales</h5>
-              <ul>
-                <li>Simulación de circuitos en tiempo real</li>
-                <li>Biblioteca extensa de componentes</li>
-                <li>Compatibilidad con microcontroladores</li>
-                <li>Herramientas de análisis avanzadas</li>
-                <li>Exportación de diseños a PCB</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div className="col-md-4">
-          <div className="card">
-            <div className="card-body">
-              <h5 className="card-title">Recursos</h5>
-              <ul className="list-unstyled">
-                <li className="mb-2">
-                  <a href="https://www.labcenter.com/downloads/" target="_blank" rel="noopener noreferrer">
-                    Descargar Proteus
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="https://www.labcenter.com/support/" target="_blank" rel="noopener noreferrer">
-                    Soporte oficial
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.labcenter.com/tutorials/" target="_blank" rel="noopener noreferrer">
-                    Tutoriales
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <Layout footer={false} title="Descarga Proteus 8.17" dark>
+      <div className='container py-5 text-center'>
+        <h2 className='font-weight-bold mb-4'><strong>Descarga Proteus 8.17</strong></h2>
+        <p className='mb-4'>
+          Proteus es un software de simulación y diseño de circuitos electrónicos que permite a los usuarios crear y probar circuitos antes de implementarlos físicamente.
+          Es ampliamente utilizado en la educación y en la industria para prototipar y validar diseños electrónicos.
+        </p>
+        <div className='d-flex flex-column align-items-center'>
+          <Image
+            src='/proteus.png' 
+            alt='Proteus 8.17'
+            width={350}
+            height={250}
+            className='mb-3'
+          />
+          <a 
+            href='https://drive.google.com/file/d/13kSvOf495EB67NdCO-hx0_SMUkyk-TBB/view?usp=sharing' 
+            target='_blank' 
+            rel='noopener noreferrer' 
+            className='btn btn-info mb-1'
+          >
+            Descargar Proteus v8.17
+          </a>
+          <a 
+            href='https://drive.google.com/file/d/12SJHGht5DvOnfQYuaNJfClADd2I5xWUw/view?usp=sharing' 
+            target='_blank' 
+            rel='noopener noreferrer' 
+            className='btn btn-info mb-3'
+          >
+            Descargar traductor de Proteus al español
+          </a>
+          <a 
+            href='https://drive.google.com/file/d/1tVo7DAXM4jjBqBw08hM0YQHVsK6dtgSC/view?usp=sharing' 
+            target='_blank' 
+            rel='noopener noreferrer' 
+            className='btn btn-info mb-3'
+          >
+            Descargar librería Arduino UNO
+          </a>
+          <a 
+            href='https://drive.google.com/file/d/11UNbW5jiSCCSgYoDkZjb36kXFEHiErCA/view?usp=sharing' 
+            target='_blank' 
+            rel='noopener noreferrer' 
+            className='btn btn-info mb-3'
+          >
+            Descargar WinRAR
+          </a>
         </div>
       </div>
-    </div>
+    </Layout>
+
   );
-}
+};
+
+export default ProteusPage;
